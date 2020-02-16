@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+   head
+      meta(charset="UTF-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      title Form
+   body
+   form(method='POST' action='/form')
+   div
+   label(for='userna me') Username:
+   input#usernamel(type='text' placeholder='Username' name='username')
+   div
+   label(for='password') Password:
+   input#password(type='password' placeholder='Password' name='password')
+   div
+   label(for='gender') Gender:
+   br
+   label(for='male') Male:
+   input(type="radio" name="gender" value="1")
+   label(for='female') Female:
+   input(type="radio" name="gender" value="0")
+   div
+   label(for='username') Agree with:
+   input#agreement(type='checkbox' name='agree', checked)
+   button(type='submit') Submit
